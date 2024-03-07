@@ -1,6 +1,6 @@
 <?php
 //1. POSTデータ取得
-
+//[name,email,age,naiyou]
 
 
 //2. DB接続します
@@ -14,6 +14,7 @@ try {
 
 //３．データ登録SQL作成
 $stmt = $pdo->prepare("******* ***** ********( ************* )VALUES( ************");
+$stmt->bindValue('******', *****, ****************);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue('******', *****, ****************);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue('******', *****, ****************);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue('******', *****, ****************);  //Integer（数値の場合 PDO::PARAM_INT)
